@@ -1,4 +1,3 @@
-//Contract based on [https://docs.openzeppelin.com/contracts/4.x/erc721](https://docs.openzeppelin.com/contracts/4.x/erc721)
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
@@ -21,7 +20,6 @@ contract GuildLeader is ERC721, Ownable {
 
         uint256 newItemId = _tokenIds.current();
         _safeMint(recipient, newItemId);
-        _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
     }

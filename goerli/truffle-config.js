@@ -6,6 +6,7 @@ module.exports = {
      network_id: "*"
     },
     dashboard: {
+      port: 24012
     }
   },
   compilers: {
